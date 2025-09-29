@@ -1,99 +1,310 @@
 <!doctype html><html lang="th"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <title>BIZ IDEA | Workshop สด: Idea→Cash Sprint</title>
-<style>
-*{box-sizing:border-box}body{font-family:system-ui,-apple-system,'Segoe UI',Tahoma;margin:0;color:#111;background:#fff}
-.container{max-width:1040px;margin:0 auto;padding:24px}
-.header{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;background:#E6F0FF;border-bottom:1px solid #eaeaea}
-.brand{display:flex;align-items:center;gap:12px;font-weight:700;color:#0B3DA5;font-size:20px}
-.brand img{height:36px}
-.hero{background:linear-gradient(135deg,#E6F0FF,#fff);padding:56px 24px;text-align:center}
-.btn{background:#0B3DA5;color:#fff;padding:12px 18px;border-radius:12px;text-decoration:none;display:inline-block}
-.muted{color:#666}
-.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.card{border:1px solid #eee;border-radius:14px;padding:16px;background:#fff}
-.footer{border-top:1px solid #eee;margin-top:32px;padding:16px 0;text-align:center;font-size:14px;color:#555}
-.copy{background:#f7f7f7;border-radius:10px;padding:12px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-.copy code{font-size:16px;background:transparent}
-.copy button{background:#1E88E5;color:#fff;border:0;padding:8px 12px;border-radius:8px;cursor:pointer}
 
-.hero.workshop{background:linear-gradient(135deg,#E6F0FF,#fdf2ff)}
-.table{width:100%;border-collapse:collapse;margin-top:8px}
-.table td,.table th{border:1px solid #eee;padding:10px;text-align:left}
-.pay{background:#f9fbff;border:1px dashed #1E88E5;padding:16px;border-radius:14px}
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1338005848327287');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1338005848327287&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<style>
+*{box-sizing:border-box}
+body{font-family:'Noto Sans Thai', system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;line-height:1.65;margin:0;color:#111;background:#fff}
+.container{max-width:1200px;margin:0 auto;padding:24px}
+.text-center{text-align:center}
+
+/* Hero Section */
+.hero{background:linear-gradient(135deg,#0B3DA5 0%,#2563EB 100%);color:#fff;padding:100px 24px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="60" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');opacity:0.3}
+.hero-content{position:relative;z-index:2;text-align:center}
+.hero h1{font-size:48px;font-weight:800;margin:0 0 20px;line-height:1.2}
+@media (max-width: 768px){
+  .hero h1{font-size:36px}
+}
+.hero .subtitle{font-size:20px;font-weight:500;margin:0 0 32px;color:#E6F0FF;line-height:1.6}
+.hero .date-info{font-size:18px;font-weight:600;margin:0 0 32px;color:#FFE066;background:rgba(255,224,102,.2);padding:12px 24px;border-radius:50px;display:inline-block}
+
+/* CTA Buttons */
+.btn-primary{background:linear-gradient(135deg,#FF6B35 0%,#F7931E 100%);color:#fff;padding:16px 32px;border-radius:50px;text-decoration:none;display:inline-block;font-weight:600;font-size:18px;margin:8px;transition:all .3s ease;box-shadow:0 8px 25px rgba(255,107,53,.4);border:none;cursor:pointer}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 35px rgba(255,107,53,.6)}
+
+/* What You'll Complete Section */
+.complete{background:#F8FAFF;padding:80px 24px}
+.complete h2{font-size:36px;font-weight:700;text-align:center;margin:0 0 48px;color:#1a1a1a}
+.complete-list{max-width:800px;margin:0 auto;background:#fff;padding:40px;border-radius:20px;box-shadow:0 8px 30px rgba(16,24,40,.08)}
+.complete-list ul{list-style:none;padding:0;margin:0}
+.complete-list li{padding:16px 0;border-bottom:1px solid #f0f0f0;font-size:18px;display:flex;align-items:center;gap:16px}
+.complete-list li:last-child{border-bottom:none}
+.complete-list li::before{content:'✅';font-size:20px;flex-shrink:0}
+
+/* Schedule Section */
+.schedule{background:#fff;padding:80px 24px}
+.schedule h2{font-size:36px;font-weight:700;text-align:center;margin:0 0 48px;color:#1a1a1a}
+.schedule-table{max-width:900px;margin:0 auto;background:#F8FAFF;border-radius:20px;overflow:hidden;box-shadow:0 8px 30px rgba(16,24,40,.08)}
+.schedule-table table{width:100%;border-collapse:collapse}
+.schedule-table th{background:#0B3DA5;color:#fff;padding:20px;font-weight:600;font-size:16px}
+.schedule-table td{padding:20px;border-bottom:1px solid #e9eefb;font-size:16px}
+.schedule-table tr:last-child td{border-bottom:none}
+.schedule-table .time{font-weight:600;color:#0B3DA5;width:150px}
+
+/* Pricing Section */
+.pricing{background:linear-gradient(135deg,#F0F8FF,#F8FAFF);padding:80px 24px}
+.pricing h2{font-size:36px;font-weight:700;text-align:center;margin:0 0 48px;color:#1a1a1a}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px;max-width:1100px;margin:0 auto}
+.pricing-card{background:#fff;padding:40px;border-radius:20px;box-shadow:0 8px 30px rgba(16,24,40,.08);text-align:center;position:relative;transition:all .3s ease}
+.pricing-card:hover{transform:translateY(-5px);box-shadow:0 15px 45px rgba(16,24,40,.15)}
+.pricing-card.featured{border:3px solid #FF6B35;transform:scale(1.05)}
+.pricing-card.featured::before{content:'แนะนำ';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#FF6B35;color:#fff;padding:8px 24px;border-radius:20px;font-size:14px;font-weight:600}
+.pricing-card h3{font-size:24px;font-weight:700;margin:0 0 16px;color:#1a1a1a}
+.pricing-card .price{font-size:32px;font-weight:800;color:#FF6B35;margin:0 0 24px}
+.pricing-card ul{list-style:none;padding:0;margin:0 0 32px;text-align:left}
+.pricing-card li{padding:8px 0;display:flex;align-items:center;gap:12px;font-size:14px}
+.pricing-card li::before{content:'✓';color:#22C55E;font-weight:bold;flex-shrink:0}
+
+/* Payment Section */
+.payment{background:#fff;padding:80px 24px}
+.payment h2{font-size:36px;font-weight:700;text-align:center;margin:0 0 48px;color:#1a1a1a}
+.payment-container{max-width:800px;margin:0 auto}
+.payment-form{background:#F8FAFF;padding:40px;border-radius:20px;box-shadow:0 8px 30px rgba(16,24,40,.08);margin-bottom:40px}
+.form-group{margin-bottom:24px}
+.form-group label{display:block;margin-bottom:8px;font-weight:600;color:#1a1a1a}
+.form-group input, .form-group select{width:100%;padding:16px;border:2px solid #e9eefb;border-radius:12px;font-size:16px;transition:all .3s ease}
+.form-group input:focus, .form-group select:focus{outline:none;border-color:#0B3DA5;box-shadow:0 0 0 3px rgba(11,61,165,.1)}
+.radio-group{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:12px}
+.radio-option{display:flex;align-items:center;gap:12px;padding:16px;border:2px solid #e9eefb;border-radius:12px;cursor:pointer;transition:all .3s ease}
+.radio-option:hover{border-color:#0B3DA5}
+.radio-option input[type="radio"]{margin:0}
+.radio-option.selected{border-color:#0B3DA5;background:#F0F8FF}
+.checkbox-group{display:flex;align-items:flex-start;gap:12px;margin:20px 0}
+.checkbox-group input[type="checkbox"]{margin-top:4px;transform:scale(1.2)}
+.checkbox-group label{font-size:14px;color:#666;line-height:1.5}
+.submit-btn{background:linear-gradient(135deg,#FF6B35 0%,#F7931E 100%);color:#fff;padding:16px 32px;font-size:18px;border:none;border-radius:50px;cursor:pointer;width:100%;margin-top:16px;font-weight:600;transition:all .3s ease;box-shadow:0 8px 25px rgba(255,107,53,.4)}
+.submit-btn:hover{transform:translateY(-3px);box-shadow:0 12px 35px rgba(255,107,53,.6)}
+
+/* Bank Info */
+.bank-info{background:linear-gradient(135deg,#F0F8FF,#E6F0FF);border:2px dashed #0B3DA5;padding:32px;border-radius:20px;text-align:center}
+.bank-info h3{color:#0B3DA5;margin:0 0 16px;font-size:20px;font-weight:700}
+.bank-info .account{font-size:24px;font-weight:800;color:#1a1a1a;margin:16px 0}
+.copy-btn{background:#0B3DA5;color:#fff;padding:12px 24px;border:none;border-radius:50px;cursor:pointer;font-weight:600;margin-top:16px;transition:all .3s ease}
+.copy-btn:hover{background:#1565C0;transform:translateY(-2px)}
+
+/* Footer */
+.footer{background:#1a1a1a;color:#fff;padding:40px 24px;text-align:center}
+.footer p{margin:8px 0;color:#ccc}
+
+/* Responsive */
+@media (max-width: 768px){
+  .container{padding:16px}
+  .hero{padding:60px 16px}
+  .complete, .schedule, .pricing, .payment{padding:60px 16px}
+  .payment-form{padding:24px}
+  .pricing-grid{grid-template-columns:1fr}
+  .pricing-card.featured{transform:none}
+  .radio-group{grid-template-columns:1fr}
+  .schedule-table .time{width:auto}
+}
 </style></head>
 <body>
-<div class="header"><div class="container"><div class="brand">
-  <img src="logo_biz_idea.png" alt="BIZ IDEA" />
-  <span>BIZ IDEA</span>
-</div><div class="muted">www.idea2cash.Pages.dev</div></div></div>
-<div class="hero workshop"><div class="container">
-  <h1>Workshop สด: Idea→Cash Sprint (1 วัน)</h1>
-  <p><b>เสาร์ 11 ตุลาคม 2025</b> | <b>10:00–17:00 น. (GMT+7)</b> | ผ่าน Zoom</p>
-  <a class="btn" href="#pricing">จองที่นั่งตอนนี้</a>
-</div></div>
-<div class="container">
-  <h2>คุณจะทำเสร็จในคลาส</h2>
-  <ul>
-    <li>Backlog & RICE ของคุณ (คัดไอเดีย Top 1)</li>
-    <li>Offer 3 แพ็ก + ราคา + การันตี</li>
-    <li>MVP Plan + ตัวชี้วัดสำเร็จ</li>
-    <li>โพสต์/DM/ฟอร์ม พร้อมปล่อยขายทันที</li>
-  </ul>
 
-  <h2>ตารางเวลา</h2>
-  <table class="table">
-    <tr><th>เวลา</th><th>หัวข้อ</th></tr>
-    <tr><td>10:00–11:00</td><td>Mindset + Framework + เคสไทย</td></tr>
-    <tr><td>11:00–12:00</td><td>กรอก Backlog & RICE</td></tr>
-    <tr><td>13:00–14:30</td><td>ออก Offer 3 แพ็ก + ราคา</td></tr>
-    <tr><td>14:45–15:45</td><td>วาง MVP Plan + Metric</td></tr>
-    <tr><td>16:00–17:00</td><td>โพสต์/DM/ฟอร์ม + Q&A</td></tr>
-  </table>
-
-  <h2 id="pricing">แพ็กเกจ & ราคา</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>EARLY BIRD – Starter</h3>
-      <p><b>1,490 บาท</b> (ถึง 4 ต.ค. 23:59)</p>
-      <ul>
-        <li>เข้าห้องสด 7 ชม. + รีเพลย์ 30 วัน</li>
-        <li>eBook v3 + Workbook + Excel</li>
-        <li>ใบประกาศ</li>
-      </ul>
-      <a class="btn" href="#pay">จอง Starter</a>
-    </div>
-    <div class="card">
-      <h3>STANDARD – Growth</h3>
-      <p><b>2,490 บาท</b></p>
-      <ul>
-        <li>ทุกอย่างใน Starter</li>
-        <li>Template Pack Pro</li>
-        <li>Q&A Clinic กลุ่ม 60 นาที</li>
-        <li>รีเพลย์ 90 วัน</li>
-      </ul>
-      <a class="btn" href="#pay">จอง Growth</a>
-    </div>
-    <div class="card">
-      <h3>VIP – Premium (จำกัด 20 ที่)</h3>
-      <p><b>5,900 บาท</b></p>
-      <ul>
-        <li>ทุกอย่างใน Growth</li>
-        <li>1:1 Review 30 นาที (ภายใน 14 วัน)</li>
-        <li>ตรวจ “ข้อเสนอ+ราคา+MVP Plan” 1 ชุด</li>
-        <li>สิทธิ์เข้ากลุ่มโฟกัส 14 วัน</li>
-      </ul>
-      <a class="btn" href="#pay">จอง VIP</a>
+<!-- Hero Section -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="container">
+      <h1>Workshop สด<br>Idea→Cash Sprint</h1>
+      <div class="date-info">🗓️ กำหนดการ Workshop สด เดือนตุลาคม 2025<br>เลือกเรียนได้ 1 วัน | 10:00–17:00 น. (GMT+7) | ผ่าน Zoom</div>
+      <div style="margin: 24px 0; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 12px; backdrop-filter: blur(10px);">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; font-size: 16px; color: #fff;">
+          <div style="padding: 12px; background: rgba(255,255,255,0.15); border-radius: 8px; text-align: center;">
+            <strong>เสาร์ 11 ต.ค. 2025</strong><br>10:00–17:00
+          </div>
+          <div style="padding: 12px; background: rgba(255,255,255,0.15); border-radius: 8px; text-align: center;">
+            <strong>อาทิตย์ 12 ต.ค. 2025</strong><br>10:00–17:00
+          </div>
+          <div style="padding: 12px; background: rgba(255,255,255,0.15); border-radius: 8px; text-align: center;">
+            <strong>เสาร์ 18 ต.ค. 2025</strong><br>10:00–17:00
+          </div>
+          <div style="padding: 12px; background: rgba(255,255,255,0.15); border-radius: 8px; text-align: center;">
+            <strong>อาทิตย์ 19 ต.ค. 2025</strong><br>10:00–17:00
+          </div>
+          <div style="padding: 12px; background: rgba(255,255,255,0.15); border-radius: 8px; text-align: center;">
+            <strong>เสาร์ 25 ต.ค. 2025</strong><br>10:00–17:00
+          </div>
+          <div style="padding: 12px; background: rgba(255,255,255,0.15); border-radius: 8px; text-align: center;">
+            <strong>อาทิตย์ 26 ต.ค. 2025</strong><br>10:00–17:00
+          </div>
+        </div>
+      </div>
+      <p class="subtitle">เวิร์กช็อปเข้มข้น 1 วันเต็ม ที่จะพาคุณจากมีแค่ไอเดียในหัว<br>ไปสู่การมีระบบขายที่พร้อมใช้งานจริง</p>
+      <a href="#pricing" class="btn-primary">จองที่นั่งตอนนี้</a>
     </div>
   </div>
-
-  <h2 id="pay">วิธีชำระเงิน (โอนบัญชีธนาคาร)</h2>
-  <div class="pay">
-    <p><b>ธนาคารกรุงเทพ</b><br>เลขที่บัญชี: <code id="acct">1384416804</code><br>ชื่อบัญชี: รณยศ ตันติถาวรรัช</p>
-    <div class="copy"><code id="acct2">1384416804</code><button onclick="navigator.clipboard.writeText('1384416804')">คัดลอกเลขบัญชี</button></div>
-    <p class="muted">หลังโอน โปรดแนบสลิปในฟอร์มยืนยันการชำระเงินของคุณ (ใส่ลิงก์ฟอร์ม) หรือส่งสลิปไปที่อีเมล/LINE ของเรา</p>
-  </div>
-
-  <div class="footer">© BIZ IDEA · www.idea2cash.Pages.dev</div>
 </div>
+
+<!-- What You'll Complete Section -->
+<div class="complete">
+  <div class="container">
+    <h2>สิ่งที่คุณจะทำเสร็จในคลาส</h2>
+    <div class="complete-list">
+      <ul>
+        <li>Backlog & RICE ของคุณ (คัดไอเดีย Top 1 ที่มีศักยภาพสูงสุด)</li>
+        <li>Offer 3 แพ็ก + ราคา + การันตีที่ดึงดูดลูกค้า</li>
+        <li>MVP Plan + ตัวชี้วัดความสำเร็จที่ชัดเจน</li>
+        <li>โพสต์/DM/ฟอร์ม พร้อมปล่อยขายทันทีหลังเลิกคลาส</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Schedule Section -->
+<div class="schedule">
+  <div class="container">
+    <h2>ตารางเวลาเวิร์กช็อป</h2>
+    <div class="schedule-table">
+      <table>
+        <thead>
+          <tr>
+            <th>เวลา</th>
+            <th>หัวข้อ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time">10:00–11:00</td>
+            <td>Mindset + Framework + เคสสตัดีไทย</td>
+          </tr>
+          <tr>
+            <td class="time">11:00–12:00</td>
+            <td>กรอก Backlog & RICE (ลงมือทำจริง)</td>
+          </tr>
+          <tr>
+            <td class="time">13:00–14:30</td>
+            <td>ออกแบบ Offer 3 แพ็ก + กำหนดราคา</td>
+          </tr>
+          <tr>
+            <td class="time">14:45–15:45</td>
+            <td>วาง MVP Plan + กำหนด Metric</td>
+          </tr>
+          <tr>
+            <td class="time">16:00–17:00</td>
+            <td>สร้างโพสต์/DM/ฟอร์ม + Q&A</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="pricing" id="pricing">
+  <div class="container">
+    <h2>แพ็กเกจ & ราคา</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>EARLY BIRD – Starter</h3>
+        <div class="price">1,490 บาท</div>
+        <p style="color:#FF6B35;font-weight:600;margin-bottom:24px">(ถึง 4 ต.ค. 23:59)</p>
+        <ul>
+          <li>เข้าห้องสด 7 ชม. + รีเพลย์ 30 วัน</li>
+          <li>eBook v3 + Workbook + Excel</li>
+          <li>ใบประกาศนำเสนอ</li>
+        </ul>
+        <a href="#pay" class="btn-primary">จอง Starter</a>
+      </div>
+      
+      <div class="pricing-card featured">
+        <h3>STANDARD – Growth</h3>
+        <div class="price">2,490 บาท</div>
+        <ul>
+          <li>ทุกอย่างใน Starter</li>
+          <li>Template Pack Pro (ครบชุด)</li>
+          <li>Q&A Clinic กลุ่ม 60 นาที</li>
+          <li>รีเพลย์ 90 วัน</li>
+        </ul>
+        <a href="#pay" class="btn-primary">จอง Growth</a>
+      </div>
+      
+      <div class="pricing-card">
+        <h3>VIP – Premium</h3>
+        <div class="price">5,900 บาท</div>
+        <p style="color:#666;font-size:14px;margin-bottom:24px">(จำกัด 20 ที่นั่ง)</p>
+        <ul>
+          <li>ทุกอย่างใน Growth</li>
+          <li>1:1 Review 30 นาที (ภายใน 14 วัน)</li>
+          <li>ตรวจ "ข้อเสนอ+ราคา+MVP Plan" 1 ชุด</li>
+          <li>สิทธิ์เข้ากลุ่มโฟกัส 14 วัน</li>
+        </ul>
+        <a href="#pay" class="btn-primary">จอง VIP</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Payment Section -->
+<div class="payment" id="pay">
+  <div class="container">
+    <h2>ขั้นตอนการชำระเงิน</h2>
+    <div class="payment-container">
+      <!-- Bank Information -->
+      <div class="bank-info">
+        <h3>🏦 1. โอนเงินชำระค่า Workshop</h3>
+        <p><strong>ธนาคารกรุงเทพ</strong></p>
+        <div class="account" id="account-number">1384416804</div>
+        <p><strong>ชื่อบัญชี:</strong> รณยศ ตันติถาวรรัช</p>
+        <button class="copy-btn" onclick="copyAccountNumber()">📋 คัดลอกเลขบัญชี</button>
+        <h3 style="margin-top: 40px;">🧾 2. แจ้งยืนยันการชำระเงิน</h3>
+        <p style="margin-top:20px;color:#666;font-size:16px">หลังโอนเงินเรียบร้อยแล้ว โปรดคลิกปุ่มด้านล่างเพื่อแจ้งข้อมูล<br>และแนบสลิปการโอนเพื่อยืนยันที่นั่งของคุณ</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkYo6AaBnYVdrZb_WxfPDkX0UcX2NdJPW1LpF6Hd2qaeqd5A/viewform?usp=header" target="_blank" class="btn-primary" style="text-decoration: none; margin-top: 16px;">แจ้งยืนยันการชำระเงินที่นี่</a>
+        <p style="margin-top:20px;color:#666;font-size:14px">ทีมงานจะตรวจสอบและส่งลิงก์เข้าร่วมให้ทางอีเมลภายใน 24 ชั่วโมง</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <div class="container">
+    <p><strong>BIZ IDEA</strong> - เปลี่ยนไอเดียเป็นเงิน</p>
+    <p>อีเมล: contact@idea2cash.netlify.app</p>
+    <p>© 2025 BIZ IDEA · <a href="BIZIDEA_privacy_policy.html" style="color:#ccc">Privacy Policy</a> · <a href="https://idea2cash.netlify.app" style="color:#ccc">www.idea2cash.netlify.app</a></p>
+  </div>
+</div>
+
+<script>
+// Copy account number function
+function copyAccountNumber() {
+  navigator.clipboard.writeText('1384416804').then(function() {
+    alert('คัดลอกเลขบัญชีแล้ว');
+  });
+}
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+</script>
+
 </body></html>

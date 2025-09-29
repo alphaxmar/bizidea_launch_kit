@@ -1,0 +1,28 @@
+plugins = []
+functionsDirectory = "D:\\1.SaaS\\bizidea_launch_kit\\.netlify\\functions"
+functionsDirectoryOrigin = "config"
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "D:\\1.SaaS\\bizidea_launch_kit"
+publishOrigin = "config"
+functions = "D:\\1.SaaS\\bizidea_launch_kit\\.netlify\\functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]

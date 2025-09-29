@@ -1,0 +1,23 @@
+<!-- Drop this where you want the form to appear (same domain) -->
+<form id="ebookForm">
+  <input type="text" name="name" placeholder="ชื่อ" required>
+  <input type="email" name="email" placeholder="อีเมล" required>
+  <label><input type="checkbox" name="consent" required> ยินยอมรับข่าวสาร</label>
+  <button type="submit">รับ eBook ฟรี</button>
+  <p id="msg" style="color:#666"></p>
+</form>
+<script>
+document.getElementById('ebookForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const payload = Object.fromEntries(fd.entries());
+  if(!payload.consent){ alert('โปรดยินยอมรับข่าวสาร'); return; }
+  const res = await fetch('/.netlify/functions/subscribe', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ name: payload.name, email: payload.email })
+  });
+  const data = await res.json();
+  document.getElementById('msg').textContent = data.message || 'ส่งสำเร็จ! กรุณาเช็กอีเมล';
+  if(res.ok) setTimeout(()=> window.location.href='/thankyou.html', 800);
+});
+</script>

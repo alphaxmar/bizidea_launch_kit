@@ -1,42 +1,243 @@
 <!doctype html><html lang="th"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <title>BIZ IDEA | eBook ฟรี: Idea→Cash Sprint</title>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1338005848327287');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1338005848327287&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 <style>
-*{box-sizing:border-box}body{font-family:system-ui,-apple-system,'Segoe UI',Tahoma;margin:0;color:#111;background:#fff}
-.container{max-width:1040px;margin:0 auto;padding:24px}
-.header{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;background:#E6F0FF;border-bottom:1px solid #eaeaea}
-.brand{display:flex;align-items:center;gap:12px;font-weight:700;color:#0B3DA5;font-size:20px}
-.brand img{height:36px}
-.hero{background:linear-gradient(135deg,#E6F0FF,#fff);padding:56px 24px;text-align:center}
-.btn{background:#0B3DA5;color:#fff;padding:12px 18px;border-radius:12px;text-decoration:none;display:inline-block}
-.muted{color:#666}
-.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.card{border:1px solid #eee;border-radius:14px;padding:16px;background:#fff}
-.footer{border-top:1px solid #eee;margin-top:32px;padding:16px 0;text-align:center;font-size:14px;color:#555}
-.copy{background:#f7f7f7;border-radius:10px;padding:12px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-.copy code{font-size:16px;background:transparent}
-.copy button{background:#1E88E5;color:#fff;border:0;padding:8px 12px;border-radius:8px;cursor:pointer}
+*{box-sizing:border-box}
+body{font-family:'Noto Sans Thai', system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;line-height:1.65;margin:0;color:#111;background:#fff}
+.container{max-width:1200px;margin:0 auto;padding:24px}
+.text-center{text-align:center}
+
+/* Hero Section */
+.hero{background:linear-gradient(135deg,#0B3DA5 0%,#2563EB 100%);color:#fff;padding:100px 24px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="60" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');opacity:0.3}
+.hero-content{position:relative;z-index:2;text-align:center}
+.hero h1{font-size:48px;font-weight:800;margin:0 0 20px;line-height:1.2}
+@media (max-width: 768px){
+  .hero h1{font-size:36px}
+}
+.hero .subtitle{font-size:20px;font-weight:500;margin:0 0 32px;color:#E6F0FF;line-height:1.6}
+
+/* CTA Buttons */
+.btn-primary{background:linear-gradient(135deg,#FF6B35 0%,#F7931E 100%);color:#fff;padding:16px 32px;border-radius:50px;text-decoration:none;display:inline-block;font-weight:600;font-size:18px;margin:8px;transition:all .3s ease;box-shadow:0 8px 25px rgba(255,107,53,.4);border:none;cursor:pointer}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 35px rgba(255,107,53,.6)}
+
+/* Benefits Section */
+.benefits{background:#F8FAFF;padding:80px 24px}
+.benefits h2{font-size:36px;font-weight:700;text-align:center;margin:0 0 48px;color:#1a1a1a}
+.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px}
+.benefit-card{background:#fff;padding:32px;border-radius:20px;box-shadow:0 8px 30px rgba(16,24,40,.08);text-align:center;transition:all .3s ease}
+.benefit-card:hover{transform:translateY(-5px);box-shadow:0 15px 45px rgba(16,24,40,.15)}
+.benefit-card h3{font-size:20px;font-weight:600;margin:0 0 12px;color:#1a1a1a}
+.benefit-card p{color:#666;margin:0;font-size:14px}
+
+/* Form Section */
+.form-section{background:#fff;padding:80px 24px}
+.form-section h2{font-size:36px;font-weight:700;text-align:center;margin:0 0 48px;color:#1a1a1a}
+.form-container{max-width:600px;margin:0 auto;background:#F8FAFF;padding:40px;border-radius:20px;box-shadow:0 8px 30px rgba(16,24,40,.08)}
+.form-group{margin-bottom:20px}
+.form-group label{display:block;margin-bottom:8px;font-weight:600;color:#1a1a1a}
+.form-group input{width:100%;padding:16px;border:2px solid #e9eefb;border-radius:12px;font-size:16px;transition:all .3s ease}
+.form-group input:focus{outline:none;border-color:#0B3DA5;box-shadow:0 0 0 3px rgba(11,61,165,.1)}
+.checkbox-group{display:flex;align-items:flex-start;gap:12px;margin:20px 0}
+.checkbox-group input[type="checkbox"]{margin-top:4px;transform:scale(1.2)}
+.checkbox-group label{font-size:14px;color:#666;line-height:1.5}
+.error-message{color:#d32f2f;margin-top:8px;font-size:14px;display:none}
+.submit-btn{background:linear-gradient(135deg,#FF6B35 0%,#F7931E 100%);color:#fff;padding:16px 32px;font-size:18px;border:none;border-radius:50px;cursor:pointer;width:100%;margin-top:16px;font-weight:600;transition:all .3s ease;box-shadow:0 8px 25px rgba(255,107,53,.4)}
+.submit-btn:hover{transform:translateY(-3px);box-shadow:0 12px 35px rgba(255,107,53,.6)}
+.submit-btn:disabled{background:#ccc;cursor:default;transform:none;box-shadow:none}
+
+/* Trust Elements */
+.trust{background:linear-gradient(135deg,#F0F8FF,#F8FAFF);padding:60px 24px;text-align:center}
+.trust-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;max-width:800px;margin:0 auto}
+.trust-item{color:#0B3DA5}
+.trust-number{font-size:36px;font-weight:800;margin:0 0 8px}
+.trust-label{font-size:14px;color:#666}
+
+/* Footer */
+.footer{background:#1a1a1a;color:#fff;padding:40px 24px;text-align:center}
+.footer p{margin:8px 0;color:#ccc}
+
+/* Responsive */
+@media (max-width: 768px){
+  .container{padding:16px}
+  .hero{padding:60px 16px}
+  .benefits, .form-section, .trust{padding:60px 16px}
+  .form-container{padding:24px}
+}
 </style></head>
 <body>
-<div class="header"><div class="container"><div class="brand">
-  <img src="logo_biz_idea.png" alt="BIZ IDEA" />
-  <span>BIZ IDEA</span>
-</div><div class="muted">www.idea2cash.Pages.dev</div></div></div>
-<div class="hero"><div class="container">
-  <h1>รับ eBook ฟรี: Idea→Cash Sprint (ฉบับละเอียด)</h1>
-  <p>ดึงไอเดียออกจากหัว → จัดระบบ → ปล่อยขายภายใน 7–14 วัน พร้อมตัวอย่างกรอกจริง</p>
-  <a class="btn" href="#form">รับ eBook ฟรี</a>
-</div></div>
-<div class="container">
-  <h2>คุณจะได้อะไร</h2>
-  <div class="grid">
-    <div class="card"><b>Quick Start 24 ชม.</b><br><span class="muted">เริ่มจากศูนย์ให้ได้เงินเร็วที่สุด</span></div>
-    <div class="card"><b>RICE + MVP Library</b><br><span class="muted">ให้คะแนนไอเดีย + ไอเดียทดสอบ 20 แบบ</span></div>
-    <div class="card"><b>Offer 3 แพ็ก</b><br><span class="muted">สูตรข้อความขาย + ราคา + การันตี</span></div>
-    <div class="card"><b>Tracking ง่าย</b><br><span class="muted">Conv, CAC, จุดคุ้มทุน</span></div>
+
+<!-- Hero Section -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="container">
+      <h1>รับ eBook ฟรี<br>Idea→Cash Sprint</h1>
+      <p class="subtitle">คู่มือฉบับสมบูรณ์ที่จะพาคุณจากมีแค่ไอเดียในหัว<br>ไปสู่การมีรายได้จริงๆ ภายใน 7-14 วัน</p>
+      <a href="#form" class="btn-primary">รับ eBook ฟรีเลย</a>
+    </div>
   </div>
-  <h2 id="form">รับฟรีตอนนี้</h2>
-  <div class="card"><p><b>ฟอร์ม:</b> ใส่ของคุณเอง (อีเมล/LINE + ช่องยินยอม + ปุ่ม “รับ eBook”)</p></div>
-  <div class="footer">© BIZ IDEA · www.idea2cash.Pages.dev</div>
 </div>
+
+<!-- Benefits Section -->
+<div class="benefits">
+  <div class="container">
+    <h2>สิ่งที่คุณจะได้รับใน eBook นี้</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <h3>🚀 Quick Start 24 ชม.</h3>
+        <p>เริ่มจากศูนย์ให้ได้เงินเร็วที่สุด พร้อมแผนการทำงานที่ชัดเจน</p>
+      </div>
+      <div class="benefit-card">
+        <h3>📊 RICE Framework + MVP Library</h3>
+        <p>วิธีให้คะแนนไอเดีย + ไอเดียทดสอบ 20 แบบที่พิสูจน์แล้วว่าได้ผล</p>
+      </div>
+      <div class="benefit-card">
+        <h3>💰 Offer 3 แพ็ก</h3>
+        <p>สูตรข้อความขาย + การตั้งราคา + การันตีที่ทำให้ลูกค้าตัดสินใจซื้อ</p>
+      </div>
+      <div class="benefit-card">
+        <h3>📈 Tracking ง่าย</h3>
+        <p>วิธีติดตาม Conversion, CAC, จุดคุ้มทุน แบบง่ายๆ ที่ใครก็ทำได้</p>
+      </div>
+      <div class="benefit-card">
+        <h3>🎯 เทมเพลตครบชุด</h3>
+        <p>แบบฟอร์มประเมินไอเดีย, แผนการตลาด, และเครื่องมือที่จำเป็น</p>
+      </div>
+      <div class="benefit-card">
+        <h3>📚 เคสสตาร์ทดี้ 10 เคส</h3>
+        <p>ตัวอย่างจริงจากผู้ประกอบการที่ประสบความสำเร็จด้วยระบบนี้</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Trust Section -->
+<div class="trust">
+  <div class="container">
+    <div class="trust-items">
+      <div class="trust-item">
+        <div class="trust-number">500+</div>
+        <div class="trust-label">คนดาวน์โหลดแล้ว</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">95%</div>
+        <div class="trust-label">ให้คะแนน 5 ดาว</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">100%</div>
+        <div class="trust-label">ฟรี ไม่มีค่าใช้จ่าย</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Form Section -->
+<div class="form-section" id="form">
+  <div class="container">
+    <h2>รับ eBook ฟรีตอนนี้</h2>
+    <div class="form-container">
+      <form id="ebookForm">
+        <div class="form-group">
+          <label for="name">ชื่อของคุณ *</label>
+          <input type="text" id="name" name="name" placeholder="กรุณากรอกชื่อของคุณ" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">อีเมลของคุณ *</label>
+          <input type="email" id="email" name="email" placeholder="กรุณากรอกอีเมลของคุณ" required>
+        </div>
+        
+        <div class="checkbox-group">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent">ฉันยินยอมให้ BIZ IDEA ติดต่อกลับเพื่อแจ้งข้อมูลข้อเสนออื่น ๆ ผ่านช่องทางที่ฉันให้ไว้</label>
+        </div>
+        
+        <button type="submit" class="submit-btn">รับ eBook ฟรีเลย</button>
+        <p id="msg" style="color:#666; margin-top: 10px; text-align: center;"></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <div class="container">
+    <p><strong>BIZ IDEA</strong> - เปลี่ยนไอเดียเป็นเงิน</p>
+    <p>อีเมล: contact@idea2cash.netlify.app</p>
+    <p>© 2025 BIZ IDEA · www.idea2cash.netlify.app</p>
+  </div>
+</div>
+
+<script>
+document.getElementById('ebookForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const payload = Object.fromEntries(fd.entries());
+  
+  if(!payload.consent){ 
+    alert('โปรดยินยอมรับข่าวสารเพื่อดำเนินการต่อ'); 
+    return; 
+  }
+  
+  // Show loading message
+  document.getElementById('msg').textContent = 'กำลังส่งข้อมูล...';
+  document.querySelector('.submit-btn').disabled = true;
+  
+  try {
+    const res = await fetch('/.netlify/functions/subscribe', {
+      method:'POST', 
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ name: payload.name, email: payload.email, type: 'ebook' })
+    });
+    
+    const data = await res.json();
+    document.getElementById('msg').textContent = data.message || 'ส่งสำเร็จ! กรุณาเช็กอีเมล';
+    
+    if(res.ok) {
+      setTimeout(() => window.location.href = 'BIZIDEA_thankyou.html', 1500);
+    } else {
+      document.querySelector('.submit-btn').disabled = false;
+    }
+  } catch (error) {
+    document.getElementById('msg').textContent = 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง';
+    document.querySelector('.submit-btn').disabled = false;
+  }
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+</script>
+
 </body></html>

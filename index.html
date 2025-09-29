@@ -1,0 +1,453 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<title>BIZ IDEA | เปลี่ยนไอเดียเป็นเงินใน 7-14 วัน</title>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1338005848327287');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1338005848327287&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<style>
+*{box-sizing:border-box}
+body{font-family:'Noto Sans Thai', system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;line-height:1.65;margin:0;color:#111;background:#fff}
+.container{max-width:1200px;margin:0 auto;padding:24px}
+.text-center{text-align:center}
+.text-left{text-align:left}
+
+/* Hero Section */
+.hero{background:linear-gradient(135deg,#0B3DA5 0%,#2563EB 100%);color:#fff;padding:100px 24px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="60" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');opacity:0.3}
+.hero-content{position:relative;z-index:2}
+.hero-wrap{display:grid;grid-template-columns:1fr;gap:40px;align-items:center;max-width:1200px;margin:0 auto}
+@media (min-width: 900px){
+  .hero-wrap{grid-template-columns:1.2fr 1fr}
+}
+.hero h1{font-size:48px;font-weight:800;margin:0 0 20px;line-height:1.2}
+@media (max-width: 768px){
+  .hero h1{font-size:36px}
+}
+.hero .subtitle{font-size:24px;font-weight:500;margin:0 0 16px;color:#E6F0FF}
+.hero .description{font-size:18px;margin:0 0 32px;color:#F0F8FF;line-height:1.6}
+.hero-visual img{width:100%;max-width:500px;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.3);display:block;margin:0 auto}
+
+/* CTA Buttons */
+.btn-primary{background:linear-gradient(135deg,#FF6B35 0%,#F7931E 100%);color:#fff;padding:16px 32px;border-radius:50px;text-decoration:none;display:inline-block;font-weight:600;font-size:18px;margin:8px;transition:all .3s ease;box-shadow:0 8px 25px rgba(255,107,53,.4);border:none;cursor:pointer}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 35px rgba(255,107,53,.6)}
+.btn-secondary{background:rgba(255,255,255,.15);color:#fff;padding:16px 32px;border-radius:50px;text-decoration:none;display:inline-block;font-weight:600;font-size:18px;margin:8px;transition:all .3s ease;border:2px solid rgba(255,255,255,.3)}
+.btn-secondary:hover{background:rgba(255,255,255,.25);transform:translateY(-2px)}
+
+/* Problem Section */
+.problem{background:#F8FAFF;padding:80px 24px}
+.problem h2{font-size:36px;font-weight:700;text-align:center;margin:0 0 48px;color:#1a1a1a}
+.problem-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;margin-bottom:48px}
+.problem-item{background:#fff;padding:32px;border-radius:20px;box-shadow:0 8px 30px rgba(16,24,40,.08);text-align:center}
+.problem-icon{font-size:48px;margin-bottom:16px}
+.problem-item h3{font-size:20px;font-weight:600;margin:0 0 12px;color:#1a1a1a}
+.problem-item p{color:#666;margin:0}
+
+/* Solution Section */
+.solution{background:#fff;padding:80px 24px}
+.solution-wrap{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+@media (min-width: 900px){
+  .solution-wrap{grid-template-columns:1fr 1fr}
+}
+.solution h2{font-size:36px;font-weight:700;margin:0 0 24px;color:#1a1a1a}
+.solution-list{list-style:none;padding:0;margin:0}
+.solution-list li{padding:12px 0;border-bottom:1px solid #f0f0f0;display:flex;align-items:center;gap:12px}
+.solution-list li:last-child{border-bottom:none}
+.solution-check{color:#22C55E;font-weight:bold;font-size:18px}
+
+/* Benefits Section */
+.benefits{background:linear-gradient(135deg,#F0F8FF,#F8FAFF);padding:80px 24px}
+.benefits h2{font-size:36px;font-weight:700;text-align:center;margin:0 0 48px;color:#1a1a1a}
+.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px}
+.benefit-card{background:#fff;padding:32px;border-radius:20px;box-shadow:0 8px 30px rgba(16,24,40,.08);text-align:center;transition:all .3s ease}
+.benefit-card:hover{transform:translateY(-5px);box-shadow:0 15px 45px rgba(16,24,40,.15)}
+.benefit-icon{font-size:48px;margin-bottom:20px}
+.benefit-card h3{font-size:22px;font-weight:600;margin:0 0 16px;color:#1a1a1a}
+.benefit-card p{color:#666;margin:0 0 20px}
+.benefit-result{background:#E6F7FF;color:#0B3DA5;padding:12px 20px;border-radius:25px;font-weight:600;font-size:14px}
+
+/* Social Proof */
+.social-proof{background:#fff;padding:80px 24px}
+.social-proof h2{font-size:36px;font-weight:700;text-align:center;margin:0 0 48px;color:#1a1a1a}
+.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;margin-bottom:48px}
+.testimonial{background:#F8FAFF;padding:32px;border-radius:20px;border-left:4px solid #0B3DA5}
+.testimonial-text{font-style:italic;margin:0 0 20px;color:#333;font-size:16px}
+.testimonial-author{font-weight:600;color:#0B3DA5}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;text-align:center}
+.stat-number{font-size:48px;font-weight:800;color:#0B3DA5;margin:0}
+.stat-label{color:#666;font-size:16px;margin:8px 0 0}
+
+/* Pricing Section */
+.pricing{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);padding:80px 24px;color:white}
+.pricing h2{font-size:36px;font-weight:700;text-align:center;margin:0 0 48px;color:white}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px;max-width:1100px;margin:0 auto}
+.pricing-card{background:#fff;padding:40px;border-radius:20px;box-shadow:0 8px 30px rgba(16,24,40,.08);text-align:center;position:relative;transition:all .3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:500px;color:#333}
+.pricing-card:hover{transform:translateY(-10px);box-shadow:0 15px 45px rgba(16,24,40,.15)}
+.pricing-card.featured{border:3px solid #FF6B35;transform:scale(1.05)}
+.pricing-card.featured:hover{transform:scale(1.05) translateY(-10px)}
+.pricing-card.featured::before{content:'แนะนำ';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#FF6B35;color:#fff;padding:8px 24px;border-radius:20px;font-size:14px;font-weight:600}
+.pricing-badge{position:absolute;top:20px;right:-30px;background:#ff6b35;color:white;padding:8px 40px;font-size:0.9rem;font-weight:600;transform:rotate(45deg);box-shadow:0 4px 8px rgba(0,0,0,0.2)}
+.pricing-title{font-size:1.5rem;font-weight:700;margin-bottom:20px;color:#333}
+.pricing-price{font-size:3rem;font-weight:800;color:#667eea;margin-bottom:10px}
+.pricing-period{font-size:1rem;color:#666;margin-bottom:30px;font-weight:500}
+.pricing-features{list-style:none;padding:0;margin:30px 0;flex-grow:1}
+.pricing-features li{padding:12px 0;border-bottom:1px solid #f0f0f0;display:flex;align-items:center;justify-content:flex-start;text-align:left}
+.pricing-features li:last-child{border-bottom:none}
+.pricing-features .check{color:#28a745;font-weight:bold;margin-right:12px;font-size:1.2rem}
+.pricing-card h3{font-size:24px;font-weight:700;margin:0 0 16px;color:#1a1a1a}
+.pricing-card .price{font-size:32px;font-weight:800;color:#FF6B35;margin:0 0 24px}
+.pricing-card ul{list-style:none;padding:0;margin:0 0 32px;text-align:left}
+.pricing-card li{padding:8px 0;display:flex;align-items:center;gap:12px;font-size:14px}
+.pricing-card li::before{content:'✓';color:#22C55E;font-weight:bold;flex-shrink:0}
+.urgency{background:#FF6B35;color:#fff;padding:20px;border-radius:15px;text-align:center;margin:48px 0 0;font-weight:600}
+
+/* FAQ Section */
+.faq{background:#F8FAFF;padding:80px 24px}
+.faq h2{font-size:36px;font-weight:700;text-align:center;margin:0 0 48px;color:#1a1a1a}
+.faq-list{max-width:800px;margin:0 auto}
+.faq-item{background:#fff;margin:16px 0;border-radius:15px;overflow:hidden;box-shadow:0 4px 15px rgba(16,24,40,.08)}
+.faq-question{padding:24px;font-weight:600;cursor:pointer;border:none;background:none;width:100%;text-align:left;font-size:16px;display:flex;justify-content:space-between;align-items:center}
+.faq-answer{padding:0 24px 24px;color:#666;display:none}
+.faq-item.active .faq-answer{display:block}
+
+/* Footer */
+.footer{background:#1a1a1a;color:#fff;padding:40px 24px;text-align:center}
+.footer-content{max-width:800px;margin:0 auto}
+.footer p{margin:8px 0;color:#ccc}
+
+/* Responsive */
+@media (max-width: 768px){
+  .container{padding:16px}
+  .hero{padding:60px 16px}
+  .problem, .solution, .benefits, .social-proof, .pricing, .faq{padding:60px 16px}
+}
+</style></head>
+<body>
+
+<!-- Hero Section -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="container">
+      <div class="hero-wrap">
+        <div class="hero-text">
+          <h1>เปลี่ยนไอเดียเป็นเงิน<br>ภายใน 7-14 วัน</h1>
+          <p class="subtitle">หลักสูตร Idea→Cash Sprint</p>
+          <p class="description">ระบบเดียวที่จะพาคุณจากมีแค่ไอเดียในหัว ไปสู่การมีรายได้จริงๆ ด้วยกระบวนการที่พิสูจน์แล้วว่าได้ผล</p>
+          <div class="hero-cta">
+            <a href="#pricing" class="btn-primary">เริ่มต้นเลย - ฟรี!</a>
+            <a href="#solution" class="btn-secondary">ดูวิธีการ</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="Google_AI_Studio_2025-09-25T10_45_46.156Z.png" alt="Idea→Cash Sprint Success">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Problem Section -->
+<div class="problem">
+  <div class="container">
+    <h2>คุณเคยรู้สึกแบบนี้ไหม?</h2>
+    <div class="problem-grid">
+      <div class="problem-item">
+        <div class="problem-icon">😤</div>
+        <h3>มีไอเดียดีๆ แต่ไม่รู้จะเริ่มยังไง</h3>
+        <p>ไอเดียเยอะแยะ แต่ไม่รู้ว่าอันไหนจะทำเงินได้จริง</p>
+      </div>
+      <div class="problem-item">
+        <div class="problem-icon">⏰</div>
+        <h3>เสียเวลาไปกับการวางแผนที่ไม่มีที่สิ้นสุด</h3>
+        <p>วางแผนไปเรื่อยๆ แต่ไม่เคยลงมือทำจริงๆ</p>
+      </div>
+      <div class="problem-item">
+        <div class="problem-icon">💸</div>
+        <h3>ลงทุนไปแล้วเยอะ แต่ยังไม่เห็นรายได้</h3>
+        <p>เสียเงินไปกับเครื่องมือต่างๆ แต่ยังไม่มีลูกค้าสักคน</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Solution Section -->
+<div class="solution" id="solution">
+  <div class="container">
+    <div class="solution-wrap">
+      <div class="solution-text">
+        <h2>วิธีแก้ปัญหาที่พิสูจน์แล้วว่าได้ผล</h2>
+        <p style="font-size:18px;color:#666;margin-bottom:32px;">ระบบ Idea→Cash Sprint ที่ช่วยให้คุณ:</p>
+        <ul class="solution-list">
+          <li><span class="solution-check">✓</span> ประเมินไอเดียด้วยกรอบ RICE ใน 30 นาที</li>
+          <li><span class="solution-check">✓</span> สร้าง MVP และทดสอบตลาดภายใน 3 วัน</li>
+          <li><span class="solution-check">✓</span> หาลูกค้าคนแรกภายใน 7 วัน</li>
+          <li><span class="solution-check">✓</span> ปรับปรุงและขยายธุรกิจใน 14 วัน</li>
+          <li><span class="solution-check">✓</span> ใช้เครื่องมือฟรีเท่านั้น ไม่ต้องลงทุนเยอะ</li>
+        </ul>
+        <a href="#pricing" class="btn-primary">เริ่มต้นเลย</a>
+      </div>
+      <div class="solution-visual">
+        <img src="Google_AI_Studio_2025-09-25T10_45_20.384Z.png" alt="Solution Process" style="width:100%;border-radius:20px;box-shadow:0 15px 45px rgba(16,24,40,.15);">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Benefits Section -->
+<div class="benefits">
+  <div class="container">
+    <h2>สิ่งที่คุณจะได้รับ</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">🎯</div>
+        <h3>ไอเดียที่ชัดเจน</h3>
+        <p>รู้แน่ชัดว่าไอเดียไหนมีโอกาสทำเงินได้มากที่สุด</p>
+        <div class="benefit-result">ประหยัดเวลา 90%</div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">⚡</div>
+        <h3>ลงมือทำได้ทันที</h3>
+        <p>มีแผนการทำงานที่ชัดเจน ไม่ต้องคิดมากแล้ว</p>
+        <div class="benefit-result">เริ่มได้ใน 24 ชม.</div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">💰</div>
+        <h3>รายได้จริง</h3>
+        <p>มีลูกค้าจ่ายเงินจริงๆ ไม่ใช่แค่ในจินตนาการ</p>
+        <div class="benefit-result">รายได้ใน 7-14 วัน</div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">📈</div>
+        <h3>ระบบที่ขยายได้</h3>
+        <p>สามารถนำไปใช้กับไอเดียอื่นๆ ได้อีกมากมาย</p>
+        <div class="benefit-result">ใช้ได้ตลอดชีวิต</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Social Proof -->
+<div class="social-proof">
+  <div class="container">
+    <h2>ผลลัพธ์จริงจากผู้เรียน</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p class="testimonial-text">"ใช้เวลาแค่ 10 วัน ก็มีรายได้แรกจากการขายคอร์สออนไลน์ 15,000 บาท ตอนนี้ทำได้เดือนละ 50,000 แล้ว"</p>
+        <div class="testimonial-author">- คุณสมชาย, ผู้สร้างคอร์สออนไลน์</div>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial-text">"จากที่เคยมีแต่ไอเดีย ตอนนี้มี SaaS ที่มีลูกค้าจ่าย 2,000 บาท/เดือน และกำลังเติบโตต่อเนื่อง"</p>
+        <div class="testimonial-author">- คุณนิดา, ผู้ก่อตั้ง SaaS</div>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial-text">"ทำตามระบบแล้วได้ลูกค้าแรกใน 5 วัน ตอนนี้มีรายได้เสริมเดือนละ 25,000 จากการขายของออนไลน์"</p>
+        <div class="testimonial-author">- คุณปรีชา, นักขายออนไลน์</div>
+      </div>
+    </div>
+    <div class="stats">
+      <div>
+        <div class="stat-number">500+</div>
+        <div class="stat-label">ผู้เรียนที่ประสบความสำเร็จ</div>
+      </div>
+      <div>
+        <div class="stat-number">7-14</div>
+        <div class="stat-label">วันเฉลี่ยที่ได้รายได้แรก</div>
+      </div>
+      <div>
+        <div class="stat-number">95%</div>
+        <div class="stat-label">อัตราความพึงพอใจ</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="pricing" id="pricing">
+  <div class="container">
+    <h2>เริ่มต้นเปลี่ยนไอเดียเป็นเงินวันนี้</h2>
+    <p class="pricing-subtitle">เลือกแพ็กเกจที่เหมาะกับคุณ</p>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-title">eBook ฟรี</div>
+        <div class="pricing-price">฿0</div>
+        <div class="pricing-period">ฟรีตลอดชีวิต</div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> คู่มือ Idea→Cash ฉบับสมบูรณ์</li>
+          <li><span class="check">✓</span> เทมเพลตประเมินไอเดีย</li>
+          <li><span class="check">✓</span> ตัวอย่างเคสจริง 10 เคส</li>
+        </ul>
+        <a href="BIZIDEA_landing_ebook.html" class="btn-primary">รับฟรีเลย</a>
+      </div>
+      
+      <div class="pricing-card featured">
+        <div class="pricing-badge">แนะนำ</div>
+        <div class="pricing-title">Workshop + Kit</div>
+        <div class="pricing-price">฿1,490</div>
+        <div class="pricing-period">Early Bird</div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Workshop สด 6 ชั่วโมง</li>
+          <li><span class="check">✓</span> Workbook + Templates</li>
+          <li><span class="check">✓</span> Excel Tools ครบชุด</li>
+          <li><span class="check">✓</span> Q&A กับผู้เชี่ยวชาญ</li>
+          <li><span class="check">✓</span> กลุ่มสนับสนุน 30 วัน</li>
+        </ul>
+        <a href="BIZIDEA_landing_workshop.html" class="btn-primary">จองที่นั่ง</a>
+      </div>
+      
+      <div class="pricing-card">
+        <div class="pricing-title">Workshop + Kit</div>
+        <div class="pricing-price">฿2,490</div>
+        <div class="pricing-period">Standard</div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Workshop สด 6 ชั่วโมง</li>
+          <li><span class="check">✓</span> Workbook + Templates</li>
+          <li><span class="check">✓</span> Excel Tools ครบชุด</li>
+          <li><span class="check">✓</span> Q&A กับผู้เชี่ยวชาญ</li>
+          <li><span class="check">✓</span> กลุ่มสนับสนุน 90 วัน</li>
+        </ul>
+        <a href="BIZIDEA_landing_workshop.html" class="btn-primary">จองที่นั่ง</a>
+      </div>
+      
+      <div class="pricing-card">
+        <div class="pricing-title">Workshop + Kit</div>
+        <div class="pricing-price">฿5,900</div>
+        <div class="pricing-period">VIP</div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Workshop สด 6 ชั่วโมง</li>
+          <li><span class="check">✓</span> Workbook + Templates</li>
+          <li><span class="check">✓</span> Excel Tools ครบชุด</li>
+          <li><span class="check">✓</span> Q&A กับผู้เชี่ยวชาญ</li>
+          <li><span class="check">✓</span> 1:1 Review 30 นาที</li>
+        </ul>
+        <a href="BIZIDEA_landing_workshop.html" class="btn-primary">จองที่นั่ง</a>
+      </div>
+      
+      <div class="pricing-card">
+        <div class="pricing-title">Kit เท่านั้น</div>
+        <div class="pricing-price">฿990</div>
+        <div class="pricing-period">ดาวน์โหลดทันที</div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Workbook ฉบับสมบูรณ์</li>
+          <li><span class="check">✓</span> Templates ทุกขั้นตอน</li>
+          <li><span class="check">✓</span> Excel Tools</li>
+          <li><span class="check">✓</span> Video Tutorial</li>
+        </ul>
+        <a href="BIZIDEA_landing_workshop.html#pricing" class="btn-primary">สั่งซื้อเลย</a>
+      </div>
+    </div>
+    
+    <div class="urgency">
+      ⚡ Workshop มีที่นั่งจำกัดเพียง 30 ท่าน - เหลือ 12 ที่นั่ง!
+    </div>
+  </div>
+</div>
+
+<!-- FAQ Section -->
+<div class="faq">
+  <div class="container">
+    <h2>คำถามที่พบบ่อย</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">
+          ต้องมีความรู้ด้านเทคนิคไหม?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>ไม่ต้องเลย! ระบบนี้ออกแบบมาสำหรับคนที่ไม่มีพื้นฐานเทคนิค เราจะสอนให้ใช้เครื่องมือฟรีที่ใครก็ใช้ได้</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          ต้องลงทุนเงินเยอะไหม?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>ไม่ต้อง! เราจะสอนให้ใช้เครื่องมือฟรีเป็นหลัก ลงทุนน้อยที่สุด เริ่มต้นได้ด้วยงบไม่เกิน 1,000 บาท</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          รับประกันผลลัพธ์ไหม?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>เรารับประกันว่าถ้าทำตามระบบแล้วไม่ได้รายได้ใน 30 วัน เราจะคืนเงิน 100%</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          ใช้เวลานานไหม?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>ใช้เวลาเพียงวันละ 2-3 ชั่วโมง เป็นเวลา 7-14 วัน คุณก็จะเห็นรายได้แรกแล้ว</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <div class="footer-content">
+    <p><strong>BIZ IDEA</strong> - เปลี่ยนไอเดียเป็นเงิน</p>
+    <p>อีเมล: contact@idea2cash.netlify.app</p>
+    <p>© 2025 BIZ IDEA · www.idea2cash.netlify.app</p>
+  </div>
+</div>
+
+<script>
+// FAQ Toggle
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const faqItem = button.parentElement;
+    const isActive = faqItem.classList.contains('active');
+    
+    // Close all FAQ items
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.classList.remove('active');
+    });
+    
+    // Open clicked item if it wasn't active
+    if (!isActive) {
+      faqItem.classList.add('active');
+    }
+    
+    // Update button text
+    button.querySelector('span').textContent = isActive ? '+' : '-';
+  });
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+</script>
+
+</body></html>
