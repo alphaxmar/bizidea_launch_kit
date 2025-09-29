@@ -22,7 +22,7 @@ export async function handler(event, context) {
     const RESEND_API_KEY = process.env.RESEND_API_KEY;
     const FROM_EMAIL = process.env.FROM_EMAIL || 'BIZ IDEA <noreply@yourdomain.com>';
     const SITE_URL = process.env.SITE_URL || 'https://idea2cash.netlify.app';
-    const EBOOK_URL = process.env.EBOOK_URL || 'D:\\1.SaaS\\bizidea_launch_kit\\\\downloads\\\\ebook_idea_to_cash_TH_v5.docx .pdf';
+    const EBOOK_URL = process.env.EBOOK_URL || 'https://drive.google.com/file/d/1_JS1FIR87aHSgtOHROH384eYzDgeBbYh/view?usp=sharing';
     const WORKSHOP_URL = process.env.WORKSHOP_URL || `${SITE_URL}/workshop.html#pricing`;
     const OWNER_EMAIL = process.env.OWNER_EMAIL || '';
 
